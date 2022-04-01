@@ -20,6 +20,7 @@ header{
     width: 613px;
     height: 70px;
     color: #FFFFFF;
+    z-index: 1;
 }
 .barra-superior h1{
     font-size: 40px;
@@ -53,6 +54,14 @@ header{
     overflow-x: scroll;
     height: auto;
 }
+.linha-comida::-webkit-scrollbar {
+    display: none; /* Chrome, Safari and Opera */
+  }
+
+.linha-comida {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
 .caixa-comida{
     display: flex;
     flex-direction: column;
@@ -60,11 +69,15 @@ header{
     height: auto;
     font-size: 10px;
     background-color: #FFFFFF;
-    padding:20px;
+    padding:10px    ;
     border-radius: 8px;
+    box-sizing: border-box;
+    position: relative;
 }
+
 .caixa-comida img{
     border-radius: 8px;
+    object-fit: contain;
 }
 .caixa-comida h5{
     font-size: 16px;
@@ -82,6 +95,43 @@ header{
     font-size: 16px;
 }
 
+.caixa-comida > ion-icon {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    font-size: 20px;
+    color: #e5e5e5;
+    background-color: #32B72F;
+    border-radius: 100%;
+    display: none;
+    
+}
+
+.selecionado1{
+    border-style: solid;
+    border-color: #32B72F;
+    border-width: 10px;
+}
+.selecionado1 ion-icon{
+    display:initial;
+}
+.selecionado2{
+    border-style: solid;
+    border-color: #32B72F;
+    border-width: 10px;
+}
+.selecionado2 ion-icon{
+    display:initial;
+}
+.selecionado3{
+    border-style: solid;
+    border-color: #32B72F;
+    border-width: 10px;
+}
+.selecionado3 ion-icon{
+    display:initial;
+}
+
 .barra-inferior{
     position: fixed;
     bottom: 0;
@@ -93,7 +143,7 @@ header{
     justify-content: center;
     align-items: center;
 }
-.barra-inferior div{
+.bottom-before{
     height:70%;
     width:80%;
     background-color: #cbcbcb;
@@ -101,5 +151,25 @@ header{
     align-items: center;
     justify-content: center;
     border-radius: 30px;
-    
+    text-align: center;
+    padding: 6px;   
+  
+}
+.bottom-after{
+    height:70%;
+    width:80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    text-align: center;
+    padding: 6px;   
+    background-color: #32B72F;
+    display: none   ;
+}
+.hide {
+    display:none;
+}
+.show {
+    display: initial;
 }

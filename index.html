@@ -18,110 +18,125 @@
    
   <main>
       <h5 class="righteous">Primeiro, seu prato</h5> 
-      <div class="linha-comida"> 
-          <div class="caixa-comida">
+      <div class="linha-comida" > 
+          <div class="caixa-comida" onclick="togglePick1(this)">
               <img src="imagens/surprised-pikachu.jpg">
               <h5><strong>frango yin-yang</strong></h5>
               <p>um pouco de batata</p>
               <p>um pouco de salada</p>
               <h6>R$14,90</h6>
+              <ion-icon  name="checkmark-sharp"></ion-icon>
           </div>
-          <div class="caixa-comida">
+          <div class="caixa-comida " onclick="togglePick1(this)">
             <img src="imagens/surprised-pikachu.jpg">
             <h5><strong>frango yin-yang</strong></h5>
             <p>um pouco de batata</p>
             <p>um pouco de salada</p>
             <h6>R$14,90</h6>
+            <ion-icon  name="checkmark-sharp"></ion-icon>
           </div>
-          <div class="caixa-comida">
+          <div class="caixa-comida" onclick="togglePick1(this)">
             <img src="imagens/surprised-pikachu.jpg">
             <h5><strong>frango yin-yang</strong></h5>
             <p>um pouco de batata</p>
             <p>um pouco de salada</p>
             <h6>R$14,90</h6>
+            <ion-icon  name="checkmark-sharp"></ion-icon>
           </div>
-          <div class="caixa-comida">
+          <div class="caixa-comida" onclick="togglePick1(this)">
             <img src="imagens/surprised-pikachu.jpg">
             <h5><strong>frango yin-yang</strong></h5>
             <p>um pouco de batata</p>
             <p>um pouco de salada</p>
             <h6>R$14,90</h6>
+            <ion-icon  name="checkmark-sharp"></ion-icon>
           </div>
       </div>
 
       <h5 class="righteous">Agora, sua bebida</h5>
       <div class="linha-comida"> 
-        <div class="caixa-comida">
+        <div class="caixa-comida" onclick="togglePick2(this)">
             <img src="imagens/surprised-pikachu.jpg">
             <h5><strong>frango yin-yang</strong></h5>
             <p>um pouco de batata</p>
             <p>um pouco de salada</p>
             <h6>R$14,90</h6>
+            <ion-icon  name="checkmark-sharp"></ion-icon>
         </div>
 
-        <div class="caixa-comida">
+        <div class="caixa-comida" onclick="togglePick2(this)">
           <img src="imagens/surprised-pikachu.jpg">
           <h5><strong>frango yin-yang</strong></h5>
           <p>um pouco de batata</p>
           <p>um pouco de salada</p>
           <h6>R$14,90</h6>
+          <ion-icon  name="checkmark-sharp"></ion-icon>
         </div>
 
 
-        <div class="caixa-comida">
+        <div class="caixa-comida" onclick="togglePick2(this)">
           <img src="imagens/surprised-pikachu.jpg">
           <h5><strong>frango yin-yang</strong></h5>
           <p>um pouco de batata</p>
           <p>um pouco de salada</p>
           <h6>R$14,90</h6>
+          <ion-icon  name="checkmark-sharp"></ion-icon>
         </div>
-        <div class="caixa-comida">
+        <div class="caixa-comida" onclick="togglePick2(this)">
           <img src="imagens/surprised-pikachu.jpg">
           <h5><strong>frango yin-yang</strong></h5>
           <p>um pouco de batata</p>
           <p>um pouco de salada</p>
           <h6>R$14,90</h6>
+          <ion-icon  name="checkmark-sharp"></ion-icon>
         </div>
       </div>
 
       <h5 class="righteous">Por fim, sua sobremesa</h5>
       <div class="linha-comida"> 
-        <div class="caixa-comida">
+        <div class="caixa-comida" onclick="togglePick3(this)">
             <img src="imagens/surprised-pikachu.jpg">
             <h5><strong>frango yin-yang</strong></h5>
             <p>um pouco de batata</p>
             <p>um pouco de salada</p>
             <h6>R$14,90</h6>
+            <ion-icon  name="checkmark-sharp"></ion-icon>
         </div>
-        <div class="caixa-comida">
+        <div class="caixa-comida" onclick="togglePick3(this)">
           <img src="imagens/surprised-pikachu.jpg">
           <h5><strong>frango yin-yang</strong></h5>
           <p>um pouco de batata</p>
           <p>um pouco de salada</p>
           <h6>R$14,90</h6>
+          <ion-icon  name="checkmark-sharp"></ion-icon>
         </div>
-        <div class="caixa-comida">
+        <div class="caixa-comida" onclick="togglePick3(this)">
           <img src="imagens/surprised-pikachu.jpg">
           <h5><strong>frango yin-yang</strong></h5>
           <p>um pouco de batata</p>
           <p>um pouco de salada</p>
           <h6>R$14,90</h6>
+          <ion-icon  name="checkmark-sharp"></ion-icon>
         </div>
-        <div class="caixa-comida">
+        <div class="caixa-comida" onclick="togglePick3(this)">
           <img src="imagens/surprised-pikachu.jpg">
           <h5><strong>frango yin-yang</strong></h5>
           <p>um pouco de batata</p>
           <p>um pouco de salada</p>
           <h6>R$14,90</h6>
+          <ion-icon  name="checkmark-sharp"></ion-icon>
         </div>
        </div>  
   </main>
 
   <footer>
       <div class="barra-inferior">
-        <div>Selecione os 3 itens pedidos</div>
+        <div class="bottom-before ">Selecione os 3 itens pedidos para fechar o pedido</div>
+        <div class="bottom-after">Fechar o Pedido</div>
       </div>
   </footer>
-
+  <script src="driveneats.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
