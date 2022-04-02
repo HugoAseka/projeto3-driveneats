@@ -183,3 +183,6 @@ header{
     display: flex;
     color: white;
 }
+.fosco{
+    backdrop-filter: opacity(20%);
+}
