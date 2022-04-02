@@ -69,10 +69,16 @@ header{
     height: auto;
     font-size: 10px;
     background-color: #FFFFFF;
-    padding:10px    ;
+    padding:4px;
     border-radius: 8px;
     box-sizing: border-box;
     position: relative;
+    border-style: solid;
+    border-color: #FFFFFF;
+    border-width: 6px;
+}
+.caixa-comida:hover{
+    cursor:pointer;
 }
 
 .caixa-comida img{
@@ -110,7 +116,7 @@ header{
 .selecionado1{
     border-style: solid;
     border-color: #32B72F;
-    border-width: 10px;
+    border-width: 6px;
 }
 .selecionado1 ion-icon{
     display:initial;
@@ -118,7 +124,7 @@ header{
 .selecionado2{
     border-style: solid;
     border-color: #32B72F;
-    border-width: 10px;
+    border-width: 6px;
 }
 .selecionado2 ion-icon{
     display:initial;
@@ -126,7 +132,7 @@ header{
 .selecionado3{
     border-style: solid;
     border-color: #32B72F;
-    border-width: 10px;
+    border-width: 6px;
 }
 .selecionado3 ion-icon{
     display:initial;
@@ -142,34 +148,38 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
+    font-size: 20px;
 }
 .bottom-before{
     height:70%;
     width:80%;
-    background-color: #cbcbcb;
+    background-color: #a2a2a2;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 30px;
-    text-align: center;
     padding: 6px;   
-  
+    text-align: center;
 }
 .bottom-after{
     height:70%;
     width:80%;
+    background-color: #32B72F;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 30px;
-    text-align: center;
-    padding: 6px;   
-    background-color: #32B72F;
-    display: none   ;
+    padding: 6px;  
+    display: none;
+}
+.bottom-before,.bottom-after:hover{
+    cursor:pointer;
 }
 .hide {
     display:none;
 }
 .show {
-    display: initial;
+    display: flex;
+    color: white;
 }
