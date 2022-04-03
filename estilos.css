@@ -3,8 +3,11 @@
 body {
     font-family: 'Righteous', cursive;
     font-family: 'Roboto', sans-serif;
-    
 }
+html, body {
+    margin:0px;
+    height:100%;
+  }
 *{
     max-width: 613px;
     font-family: 'Roboto';
@@ -21,6 +24,7 @@ header{
     height: 70px;
     color: #FFFFFF;
     z-index: 1;
+    box-shadow: 0 6px  6px #aaaaaa;
 }
 .barra-superior h1{
     font-size: 40px;
@@ -52,7 +56,7 @@ header{
     gap: 20px;
     padding-left: 20px;
     overflow-x: scroll;
-    height: auto;
+    height: 350px;
 }
 .linha-comida::-webkit-scrollbar {
     display: none; /* Chrome, Safari and Opera */
@@ -65,8 +69,9 @@ header{
 .caixa-comida{
     display: flex;
     flex-direction: column;
-    width: 40%;
-    height: auto;
+    justify-content: space-between;
+    width: 500px;
+    height: 300px;
     font-size: 10px;
     background-color: #FFFFFF;
     padding:4px;
@@ -76,14 +81,17 @@ header{
     border-style: solid;
     border-color: #FFFFFF;
     border-width: 6px;
+    box-shadow: 0 6px  6px #aaaaaa;
 }
 .caixa-comida:hover{
     cursor:pointer;
 }
 
 .caixa-comida img{
-    border-radius: 8px;
-    object-fit: contain;
+    border-radius: 10px;
+    object-fit: cover;
+    height: 150px;
+    width: 200px;
 }
 .caixa-comida h5{
     font-size: 16px;
@@ -150,6 +158,7 @@ header{
     align-items: center;
     color: white;
     font-size: 20px;
+    box-shadow: 0 -6px  6px #aaaaaa;
 }
 .bottom-before{
     height:70%;
@@ -171,7 +180,7 @@ header{
     justify-content: center;
     border-radius: 30px;
     padding: 6px;  
-    display: none;
+   
 }
 .bottom-before,.bottom-after:hover{
     cursor:pointer;
@@ -184,5 +193,75 @@ header{
     color: white;
 }
 .fosco{
-    backdrop-filter: opacity(20%);
+    filter: opacity(80%);
+}
+.fundo-confirmacao{
+    width: 100%;
+    height: 1400px;
+    position:absolute;
+    top:0px;
+    right:0px;
+    bottom:0px;
+    left:0px;
+    filter: opacity(60%);
+    background-color: white;
+    z-index: 1;
+ 
+}
+.confirmacao1{
+    
+    display: none;
+}
+.confirmacao2{
+    position: fixed;
+    width: 80%;
+    height: 50%;
+    background-color: #32B72F;
+    top: 16%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+    box-sizing: border-box;
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 1px;
+    color: #FFFFFF;
+    z-index:1;
+    box-shadow: 2px 2px 6px #aaaaaa, -2px -2px 6px #aaaaaa;
+   
+}
+.confirmacao{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    
+}
+.prato{
+    padding-top: 30px;
+}
+.botao-confirmacao{
+    background-color: #FFFFFF;
+    color: #32B72F;
+    width: 250px;
+    height: 30px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    font-weight: 600;
+    margin-top:20px;
+
+}
+.cancelar{
+    padding-top: 16px;
+    
+}
+.botao-confirmacao, .cancelar:hover{
+    cursor: pointer;
+    
 }
