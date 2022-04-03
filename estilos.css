@@ -79,7 +79,7 @@ header{
     box-sizing: border-box;
     position: relative;
     border-style: solid;
-    border-color: #FFFFFF;
+    border-color: transparent;
     border-width: 6px;
     box-shadow: 0 6px  6px #aaaaaa;
 }
